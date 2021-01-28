@@ -80,10 +80,7 @@ export default class Home extends Component {
             <CheckBox
               disabled={false}
               value={married}
-              onValueChange={(value) => {
-                console.log('NEW VALUE', value);
-                this.setState({married: value});
-              }}
+              onValueChange={(value) => this.setState({married: value})}
             />
             <Text style={PageStyle.checkLabel}>Married</Text>
           </View>
